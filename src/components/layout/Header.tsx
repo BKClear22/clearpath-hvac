@@ -18,7 +18,7 @@ export function Header() {
           <img
             src="/logo.png"
             alt={SITE_CONFIG.name}
-            className="h-25 w-auto object-contain"
+            className="h-[100px] w-auto object-contain"
           />
           <div className="hidden sm:block">
             <p className="text-lg font-bold text-primary">{SITE_CONFIG.name}</p>
@@ -73,7 +73,7 @@ export function Header() {
                   <img
                     src="/logo.png"
                     alt={SITE_CONFIG.name}
-                    className="h-25 w-auto object-contain"
+                    className="h-[100px] w-auto object-contain"
                   />
                   <div>
                     <p className="text-lg font-bold text-primary">{SITE_CONFIG.name}</p>
