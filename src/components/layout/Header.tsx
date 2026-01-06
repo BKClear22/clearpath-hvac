@@ -12,17 +12,17 @@ export function Header() {
 
   return (
     <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
-      <div className="container mx-auto flex h-16 items-center justify-between px-4">
+      <div className="container mx-auto flex h-24 items-center justify-between px-4">
         {/* Logo */}
         <Link href="/" className="flex items-center gap-2">
           <img
             src="/logo.png"
             alt={SITE_CONFIG.name}
-            className="h-[100px] w-auto object-contain"
+            className="h-20 w-auto object-contain"
           />
           <div className="hidden sm:block">
-            <p className="text-lg font-bold text-primary">{SITE_CONFIG.name}</p>
-            <p className="text-xs text-muted-foreground">{SITE_CONFIG.tagline}</p>
+            <p className="text-lg font-bold text-primary whitespace-nowrap">{SITE_CONFIG.name}</p>
+            <p className="text-xs text-muted-foreground whitespace-nowrap">{SITE_CONFIG.tagline}</p>
           </div>
         </Link>
 
@@ -73,7 +73,7 @@ export function Header() {
                   <img
                     src="/logo.png"
                     alt={SITE_CONFIG.name}
-                    className="h-[100px] w-auto object-contain"
+                    className="h-16 w-auto object-contain"
                   />
                   <div>
                     <p className="text-lg font-bold text-primary">{SITE_CONFIG.name}</p>
